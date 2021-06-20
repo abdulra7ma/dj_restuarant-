@@ -41,4 +41,17 @@ class Reviewer(models.Model):
     image = models.ImageField(upload_to='reviewers/')
 
     def __str__(self) -> str:
+<<<<<<< HEAD
+=======
+        return f'{self.first_name} {self.last_name}'
+
+class Reviewer2(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    job = models.CharField(max_length=50)
+    review = models.TextField()
+    image = models.ImageField(upload_to='reviewers/')
+
+    def __str__(self) -> str:
+>>>>>>> remodeling_db
         return f'{self.first_name} {self.last_name}'
