@@ -1,0 +1,7 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 17, 2021 - 13:07:43
+Django version 3.2.4, using settings 'dj_restaurant.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
