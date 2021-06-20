@@ -21,6 +21,10 @@ class Reservation(models.Model):
         choices=NUMBER_RESERVATION_PEOPLE
     )
     time = models.TimeField()
+    created_at = models.TimeField(auto_now_add=True)
 
     def __str__(self) -> str:
         return self.name
+
+    class Meta:
+        v
