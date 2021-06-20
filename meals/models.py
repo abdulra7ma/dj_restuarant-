@@ -43,4 +43,12 @@ class Reviewer(models.Model):
     def __str__(self) -> str:
         return f'{self.first_name} {self.last_name}'
 
+class Reviewer2(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    job = models.CharField(max_length=50)
+    review = models.TextField()
+    image = models.ImageField(upload_to='reviewers/')
 
+    def __str__(self) -> str:
+        return f'{self.first_name} {self.last_name}'
